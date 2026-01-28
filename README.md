@@ -1,14 +1,24 @@
 # How to using Nextdns on openwrt, xwrt , padavan ,... with http dns proxy
 
+***Install https-dns-proxy***
+````
+opkg update
+opkg install https-dns-proxy
+````
+
 1. ssh to router (you can use terminal , termux ( android) , termius ( android) , cmd, ...)
 copy & paste this command :
 ```
-mkdir /opt/nextdns/ && cd /opt/nextdns/ && wget https://raw.githubusercontent.com/cuongctb/Nextdns_openwrt_http_dns_proxy/main/nextdns.sh
+mkdir /opt/
+mkdir /opt/nextdns/
+cd /opt/nextdns/
+wget https://raw.githubusercontent.com/cuongctb/Nextdns_openwrt_http_dns_proxy/main/nextdns.sh
 ```
 
 2. after running the above command , continue copying and pasting this command:
 ```
-chmod +x nextdns.sh && vi nextdns_ids.txt 
+chmod +x nextdns.sh
+vi nextdns_ids.txt 
 ```
 3. after vi editor pops up, go to nextdns.io  login and create new profile copy & paste id .
 
